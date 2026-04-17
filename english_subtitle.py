@@ -9,9 +9,9 @@ st.title("英文字幕學習工具")
 # 用 markdown 顯示帶有 HTML 顏色與粗體的文字
 st.markdown('請輸入 YouTube 影片 ID (例如網址中紅字部分: https://www.youtube.com/watch?v=<span style="color:red; font-weight:bold;">OPf0YbXqDm0</span>)', unsafe_allow_html=True)
 
-# 2. text_input 的標籤（第一個參數）設為空字串 "" 或使用 label_visibility 隱藏
+# text_input 的標籤（第一個參數）設為空字串 "" 或使用 label_visibility 隱藏
 video_id = st.text_input("", "OPf0YbXqDm0", label_visibility="collapsed").strip()
-修改重點說明：
+
 
 if video_id:
     try:
