@@ -8,7 +8,6 @@ st.title("英文字幕學習工具")
 
 video_id = st.text_input("請輸入 YouTube 影片 ID", "sG5bsLEpYiA").strip()
 
-
 if video_id:
     try:
         api = YouTubeTranscriptApi()
