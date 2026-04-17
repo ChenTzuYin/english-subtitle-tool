@@ -7,10 +7,10 @@ st.set_page_config(layout="wide")
 st.title("英文字幕學習工具")
 
 # 用 markdown 顯示帶有 HTML 顏色與粗體的文字
-st.markdown('請輸入 YouTube 影片 ID (例如網址中紅字部分: https://www.youtube.com/watch?v=<span style="color:red; font-weight:bold;">OPf0YbXqDm0</span>)', unsafe_allow_html=True)
+st.markdown('請輸入 YouTube 影片 ID (例如網址中粗體部分: https://www.youtube.com/watch?v=<span style="color:brown; font-weight:bold;">OPf0YbXqDm0</span>)', unsafe_allow_html=True)
 
 # text_input 的標籤（第一個參數）設為空字串 "" 或使用 label_visibility 隱藏
-video_id = st.text_input("", "sG5bsLEpYiA", label_visibility="collapsed").strip()
+video_id = st.text_input("", "OPf0YbXqDm0", label_visibility="collapsed").strip()
 
 
 if video_id:
